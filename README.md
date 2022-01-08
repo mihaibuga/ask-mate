@@ -150,15 +150,15 @@ Open the server address in the browser and navigate the forum freely.
 [virtualenv]: https://pypi.org/project/virtualenv/
 
 
-[home-page]: captures/home-page.png
-[questions-page]: captures/questions-page.png
-[register-page]: captures/register-details.png
-[login-page]: captures/login-page.png
-[tags-page]: captures/tags-page.png
-[home-page-logged-in]: captures/home-page-logged-in.png
-[new-question-page]: captures/new-question-page.png
-[new-answer-page]: captures/new-answer-page.png
-[question-page]: captures/question-page.png
-[user-dashboard-page]: captures/user-dashboard-page.png
-[users-page]: captures/users-page.png
+[home-page]: images/captures/home-page.png
+[questions-page]: images/captures/questions-page.png
+[register-page]: images/captures/register-details.png
+[login-page]: images/captures/login-page.png
+[tags-page]: images/captures/tags-page.png
+[home-page-logged-in]: images/captures/home-page-logged-in.png
+[new-question-page]: images/captures/new-question-page.png
+[new-answer-page]: images/captures/new-answer-page.png
+[question-page]: images/captures/question-page.png
+[user-dashboard-page]: images/captures/user-dashboard-page.png
+[users-page]: images/captures/users-page.png
 
