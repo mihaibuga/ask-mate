@@ -169,7 +169,7 @@ Thanks for all the support to the Codecool mentors that have guided us!
 
 [home-page]: images/captures/home-page.png
 [questions-page]: images/captures/questions-page.png
-[register-page]: images/captures/register-details.png
+[register-page]: images/captures/register-page.png
 [login-page]: images/captures/login-page.png
 [tags-page]: images/captures/tags-page.png
 [home-page-logged-in]: images/captures/home-page-logged-in.png
