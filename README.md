@@ -16,6 +16,8 @@
     </li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#development-team">Development Team</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -140,6 +142,19 @@ Open the server address in the browser and navigate the forum freely.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Development Team
+
+* [Mihai Buga's GitHub][mihai-buga]
+* [Nicolae Peptea's GitHub][nicolae-peptea]
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Thanks for all the support to the Codecool mentors that have guided us!
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 [postgres]: https://www.postgresql.org/
 [python]: https://www.python.org/
@@ -149,6 +164,8 @@ Open the server address in the browser and navigate the forum freely.
 [visual-studio-code]: https://code.visualstudio.com/
 [virtualenv]: https://pypi.org/project/virtualenv/
 
+[mihai-buga]: https://github.com/mihaibuga
+[nicolae-peptea]: https://github.com/Nicolae-Peptea
 
 [home-page]: images/captures/home-page.png
 [questions-page]: images/captures/questions-page.png
