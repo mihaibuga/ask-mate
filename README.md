@@ -14,8 +14,7 @@
         <li><a href="#visuals">Visuals</a></li>
       </ul>
     </li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#installation-and-usage">Installation and Usage</a></li>
     <li><a href="#development-team">Development Team</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -26,9 +25,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![home-page.png][home-page]
-
 Ask mate is a forum where visitors can register and login, start new discussions on different topics, respond to other topics, comment on questions and answers, and vote for answers as preffered. It's simmilar to let's say...Stack Overflow, but it's low specs version.
+
+![home-page.png][home-page]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -44,8 +43,10 @@ Ask mate is a forum where visitors can register and login, start new discussions
 - Vote questions and answers
 - Comment questions and answers
 - Mark questions as selected
-- Access user dashboard
 - Delete questions, answers and comments
+- Access user dashboard
+- Users statistics
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -71,7 +72,7 @@ IDE:
 
 ### Visuals
 
-Empty Cart:
+Home page:
 
 ![questions-page.png][questions-page]
 
@@ -115,32 +116,45 @@ Users Page:
 
 
 
-## Installation
+## Installation and Usage
+
+### If you'd like to have a look at the application, please, follow these steps:
+
+- Go to the [web app][heroku-app] on Heroku
+- Use Demo Credentials:
+	```
+	user_name: nick_the_brick@yolo.com
+	pass: L1nk1np@rk
+	``` 
+- Enjoy!
+
+### If you'd like to edit and test the source code on Windows OS, please, follow these steps
 
 - Install [Python][python]
 - Install [PostgreSQL][postgres]
-- Update Pip
-- Install [virtualenv][virtualenv]
-- Activate virtualenv
-- Install requirements
+- In order to acccess the PSQL command line or python, pip, set up the environment variables with the path of the `bin` and `lib` folders of PostgreSQL directory, your Python folder path and the subfolder `Scripts`. Maybe these videos could give you a hand with this: [Set postgres path][set-postgres-env-vars], [Set python path][set-python-env-vars] 
+- Install [virtualenv][virtualenv] with `pip install virtualenv` from the command prompt
+- Open the root directory and create a virtual environment `virtualenv venv`
+- Activate virtualenv with `venv\Scripts\activate`
+- Install requirements from the `requirements.txt` `pip install -r requirements.txt`
 - Install psycopg2
 - Run psql
 - Create a database
 - Run in command line all lines from the sql file in the sample_data directory
-- Create .env file and fill it with the template data and your own PostgreSQL data
-- Run the server
+- Run `psql -U postgres` in the command line and add the password you choose when installed PostgreSQL to login
+- Create a database `psql CREATE DATABASE <DB_NAME>`
+- Connect to the database you've just created `psql \c <DB_NAME>`
+- Seed the database with the data from `\sample_data\askmatepart2-sample-data.sql` by using `psql \i <Copy realtive path of the askmatepart2-sample-data.sql>` change the `\` path separator with `/`
+- Duplicate the `.env.template` and rename it to `.env`
+- In the `.env` file fill these fields
+
+    ```PSQL_USER_NAME=postgres account
+    PSQL_PASSWORD=postgres account password
+    PSQL_HOST=localhost
+    PSQL_DB_NAME=db_name_you_created ```
+- Run `server.py`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Open the server address in the browser and navigate the forum freely.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 ## Development Team
 
@@ -167,6 +181,8 @@ Thanks for all the support to the Codecool mentors that have guided us!
 [mihai-buga]: https://github.com/mihaibuga
 [nicolae-peptea]: https://github.com/Nicolae-Peptea
 
+[heroku-app]:https://askmate09.herokuapp.com/
+
 [home-page]: images/captures/home-page.png
 [questions-page]: images/captures/questions-page.png
 [register-page]: images/captures/register-page.png
@@ -179,3 +195,5 @@ Thanks for all the support to the Codecool mentors that have guided us!
 [user-dashboard-page]: images/captures/user-dashboard-page.png
 [users-page]: images/captures/users-page.png
 
+[set-postgres-env-vars]: https://youtu.be/0CAzSXG6N8E
+[set-python-env-vars]: https://youtu.be/OS5EgtMQrmQ
